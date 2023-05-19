@@ -1,10 +1,15 @@
-import { lazy } from "react";
+
+// import { lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
-const Tweets = lazy(() => import("../pages/Tweets/Tweets"));
-const Home = lazy(() => import("../pages/Home/Home"));
-const Layout = lazy(() => import("../pages/Layout/Layout"));
+// const Tweets = lazy(() => import("../pages/Tweets/Tweets"));
+// const Home = lazy(() => import("../pages/Home/Home"));
+// const Layout = lazy(() => import("../pages/Layout/Layout"));
+import Tweets from "../pages/Tweets/Tweets";
+import Home from "../pages/Home/Home";
+import Layout from "../pages/Layout/Layout";
+
 
 export const App = () => {
   return (
