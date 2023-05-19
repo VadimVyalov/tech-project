@@ -1,6 +1,6 @@
 //import { useCallback } from 'react';
-import PropTypes from 'prop-types';
-import { toast, Zoom } from 'react-toastify';
+import PropTypes from "prop-types";
+import { toast, Zoom } from "react-toastify";
 
 const ErrorMessage = (msg, clb = false) => {
   const Msg = ({ closeToast, errorMessage }) => (
@@ -18,17 +18,16 @@ const ErrorMessage = (msg, clb = false) => {
 
   toast.error(<Msg errorMessage={msg} errorClose={clb} />, {
     closeButton: false,
-    onClose: props => props.errorClose && props.errorClose(),
+    onClose: (props) => props.errorClose && props.errorClose(),
     autoClose: 5000,
     transition: Zoom,
     pauseOnFocusLoss: false,
     position: toast.POSITION.TOP_CENTER,
   });
 };
+export default ErrorMessage;
 
 ErrorMessage.propTypes = {
   msg: PropTypes.string.isRequired,
   clb: PropTypes.func,
 };
-
-export default ErrorMessage;
