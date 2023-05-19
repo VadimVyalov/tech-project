@@ -15,7 +15,7 @@ import "./fonts/Montserrat-SemiBold.ttf";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename={"tech-project/"}>
+      <BrowserRouter basename={"tech-project"}>
         {/* <PersistGate loading={null} persistor={persistor}> */}
         <App />
         {/* </PersistGate> */}
