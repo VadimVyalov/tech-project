@@ -10,10 +10,12 @@ import "./fonts/Montserrat-Regular.ttf";
 import "./fonts/Montserrat-Medium.ttf";
 import "./fonts/Montserrat-SemiBold.ttf";
 
+//https://vadimvyalov.github.io/tech-project/
+//import.meta.env.BASE_URL
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename={"https://vadimvyalov.github.io/tech-project/"}>
         {/* <PersistGate loading={null} persistor={persistor}> */}
         <App />
         {/* </PersistGate> */}
