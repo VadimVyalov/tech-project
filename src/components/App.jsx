@@ -12,10 +12,10 @@ import Layout from "../pages/Layout/Layout";
 export const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/tech-project" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/tweets" element={<Tweets />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/tech-project/tweets" element={<Tweets />} />
+        <Route path="*" element={<Navigate to="/tech-project" />} />
       </Route>
     </Routes>
   );
