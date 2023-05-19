@@ -10,12 +10,13 @@ const Home = lazy(() => import("../pages/Home/Home"));
 import Layout from "../pages/Layout/Layout";
 
 export const App = () => {
+  console.log(import.meta.env);
   return (
     <Routes>
-      <Route path="/tech-project" element={<Layout />}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/tech-project/tweets" element={<Tweets />} />
-        <Route path="*" element={<Navigate to="/tech-project" />} />
+        <Route path="/tweets" element={<Tweets />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Route>
     </Routes>
   );
