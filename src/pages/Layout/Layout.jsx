@@ -16,7 +16,7 @@ const Layout = () => {
         <MenuLink to="/" end>
           Home
         </MenuLink>
-        <MenuLink to="/movies">Movies</MenuLink>
+        <MenuLink to="/tweets">Tweets</MenuLink>
       </Header>
       <main>
         <Suspense fallback={<Loader />}>
