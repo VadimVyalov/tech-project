@@ -1,3 +1,4 @@
+
 // import { lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Tweets from "../pages/Tweets/Tweets";
 import Home from "../pages/Home/Home";
 import Layout from "../pages/Layout/Layout";
+
 
 export const App = () => {
   return (
