@@ -11,7 +11,7 @@ import "./fonts/Montserrat-Regular.ttf";
 import "./fonts/Montserrat-Medium.ttf";
 import "./fonts/Montserrat-SemiBold.ttf";
 
-//https://
+//https://url
 //import.meta.env.BASE_URL
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
