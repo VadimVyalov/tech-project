@@ -1,7 +1,0 @@
-import{c as m,r,j as s}from"./index-30936eb3.js";import{u as n}from"./apiGet-07db7467.js";import{L as x}from"./Loader-61c9142e.js";const f=()=>{const{id:c}=m(),[t,o]=r.useState(null),i=`/movie/${c}/credits`,{data:a,isLoaded:d}=n(i);return r.useEffect(()=>{a!==null&&o(a.cast)},[a]),d?s.jsx(x,{}):t!=null&&t.length?s.jsxs(s.Fragment,{children:[s.jsx("h2",{className:"text-xl font-semibold my-2",children:"Cast"}),s.jsx("ul",{className:`grid gap-3 
-                grid-cols-2
-                sm:grid-cols-3
-                md:grid-cols-4
-                lg:grid-cols-5 
-                xl:grid-cols-6`,children:t.map(e=>s.jsxs("li",{className:`flex flex-col gap-2 p-2 border border-solid border-stone-800
-           rounded-md`,children:[s.jsx("img",{className:"w-full",src:e.profile_path?`https://image.tmdb.org/t/p/w185/${e.profile_path}`:"https://via.placeholder.com/185x280/cccccc/db0404.jpg?text=No+image",width:185,height:280,onError:({currentTarget:l})=>{l.onerror=null,l.src="https://via.placeholder.com/185x280/cccccc/db0404.jpg?text=No+image"},alt:`Poster: ${e.name}`}),s.jsx("p",{className:"text-lg font-semibold",children:e.original_name}),s.jsxs("p",{className:"text-base font-medium ",children:["Pharacter:",s.jsxs("span",{className:"text-lg font-semibold italic",children:[" ",e.character," "]})]})]},e.id))})]}):s.jsx("p",{className:"text-lg font-semibold",children:"немаэ інформації"})};export{f as default};
