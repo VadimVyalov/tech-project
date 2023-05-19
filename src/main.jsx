@@ -11,11 +11,9 @@ import "./fonts/Montserrat-Regular.ttf";
 import "./fonts/Montserrat-Medium.ttf";
 import "./fonts/Montserrat-SemiBold.ttf";
 
-//https://url
-//import.meta.env.BASE_URL
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename={"tech-project"}>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/tech-project/"}>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <App />
