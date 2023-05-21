@@ -13,7 +13,7 @@ import "./fonts/Montserrat-SemiBold.ttf";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter  basename={'/'}>
+    <BrowserRouter  basename={'/tech-project/'}>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <App />
